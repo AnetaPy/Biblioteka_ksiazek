@@ -1,0 +1,126 @@
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: Arial, sans-serif
+
+h1 
+  margin: 30px
+  font-size: 40px
+  text-align: center
+  color: rgb(42, 65, 134)
+
+form
+  margin: 20px auto
+  max-width: 50vw
+  min-width: 500px
+
+  label 
+    margin: 30px 10px 30px 0
+    font-size: 25px
+    color: rgb(11, 26, 68)
+
+  input[type=text]
+    margin: 10px 0 
+    padding: 10px
+    width: 100%
+    font-size: 20px
+    
+  .selectContainer
+    margin: 10px 0 20px 0
+    overflow:hidden
+    height: 40px
+    line-height: 40px
+    
+    select 
+      margin-left: 10px
+      padding: 5px
+      width: 150px
+      font-size: 16px
+      color: #000
+      text-align: center
+     
+  .radio
+	  appearance: none
+	  background-color: #f8f5f5
+	  border: 1px solid #c3caca
+	  padding: 10px
+	  border-radius: 2px
+	  display: inline-block
+	  position: relative
+
+  .radio:checked:after 
+	  content: '\2718'
+  	font-size: 14px
+	  position: absolute
+	  top: 0px
+  	left: 3px
+	  color: blue
+
+  .radio + label 
+    margin-left: 10px
+    font-size: 21px
+    line-height: 30px
+
+  button.send
+    display: block
+    margin: 30px auto
+    padding: 8px
+    width: 50%
+    font-size: 20px
+    color: rgb(11, 26, 68)
+    background-color: rgb(252, 252, 253)
+    border: 2px solid rgb(80, 116, 224)
+    border-radius: 10px
+    cursor: pointer
+
+.content
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin: 20px auto
+  width: 60vw
+  color: rgb(11, 26, 68)
+
+  .title, .author, .priority, .category
+    margin: 20px
+    flex-grow: 1
+
+    h3
+      margin: 20px 0
+      font-size: 20px
+      text-align: center
+
+    ul li 
+      padding: 10px
+      list-style: none
+      text-align: center
+
+  button.delete
+    margin: 25px 0 0 20px
+    flex-grow: 0
+    display: block
+    padding: 8px
+    width: 80px
+    height: 80px
+    font-size: 18px
+    color: rgb(11, 26, 68)
+    background-color: rgb(252, 252, 253)
+    border: 2px solid rgb(80, 116, 224)
+    border-radius: 10px
+    cursor: pointer
+    
+@media ( max-width: 1336px)
+  .content .category h3 
+    min-height: 46px
+
+  
+
+
+      
+
+
+    
+  
+
+

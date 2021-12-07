@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularze</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="localStorageFunction()">
+    <h1>Biblioteka</h1>
+    <form action="">
+      <label>Tytuł książki</label><input type="text" id="titleId" />
+      <label>Autor książki</label><input type="text" id="authorId" />
+      <div class="selectContainer">
+        <label>Priorytet przeczytania</label>
+        <select id="priorityId">
+          <option value="0" selected disabled>Wybierz opcje...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <label>Kategoria:</label>
+      <input
+        type="radio"
+        name="categoryName"
+        class="radio"
+        value="Kryminał"
+      /><label>Kryminał</label>
+      <input
+        type="radio"
+        name="categoryName"
+        class="radio"
+        value="Romans"
+      /><label>Romans</label>
+      <input
+        type="radio"
+        name="categoryName"
+        class="radio"
+        value="Fantasy"
+      /><label>Fantasy</label>
+      <button class="send">Wyślij</button>
+    </form>
+    <div class="content">
+      <div class="title">
+        <h3>Tytuł książki</h3>
+        <ul></ul>
+      </div>
+      <div class="author">
+        <h3>Autor książki</h3>
+        <ul></ul>
+      </div>
+      <div class="priority">
+        <h3>Priorytet przeczytania</h3>
+        <ul></ul>
+      </div>
+      <div class="category">
+        <h3>Kategoria</h3>
+        <ul></ul>
+      </div>
+      <br />
+      <button class="delete">Usuń historię</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
