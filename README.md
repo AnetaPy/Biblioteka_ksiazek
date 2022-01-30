@@ -10,3 +10,23 @@ Project is created with:
 * HTML5
 * CSS3 - SASS
 * JavaScript
+
+## Setup
+
+To run this project: 
+
+1. Clone this repository.
+```
+$ git clone https://github.com/AnetaPy/book-library
+$ git cd book-library
+```
+
+2. Install dependencies.
+```
+$ npm install
+```
+
+3. Run this website
+```
+$ npm run start
+```
